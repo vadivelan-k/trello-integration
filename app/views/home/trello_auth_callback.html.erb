@@ -1,0 +1,26 @@
+
+<% puts @access_token.inspect %>
+<br/>
+User Detail
+Name: <%= @member.username %>
+<br />
+Boards
+<% @boards.each do |board| %>
+		Name: <%= board.name %>
+		Description: <%= board.description %>
+		<br />
+<% end %>
+
+<script>
+$(function(){
+		/*
+		$.ajax({
+				type: "POST",
+				url: '<%= trello_token_approve_path %>',
+				data: {token_hash: location.hash},
+				dataType: 'script'
+		});
+		*/
+});
+</script>
+

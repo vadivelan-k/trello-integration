@@ -1,0 +1,9 @@
+User Detail
+Name: <%= @member.username %>
+<br />
+Boards
+<% @boards.each do |board| %>
+		Name: <%= board.name %>
+		Description: <%= board.description %>
+		<br />
+<% end %>
